@@ -25,15 +25,26 @@ body {
 .page-header .container,
 .page-footer .container {
   max-width: 1408px;
-  text-align: right;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .page-header a {
+  margin-top: 20px;
   margin-left: 56px;
   color: #288be6;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
+}
+
+.page-header .logo {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-menu:hover {
+  text-decoration: underline;
 }
 
 .header-email {
@@ -48,6 +59,11 @@ body {
 
 .hero-image {
   margin-bottom: 620px;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,0.7038165608040091) 0%, rgba(255,255,255,0.2976540958180147) 50%, rgba(255,255,255,0) 80%);  
+  background-position: center;
+  border-radius: 25%;
+  position: relative;
 }
 
 .hero-image .container {
@@ -59,13 +75,13 @@ body {
   margin: 0 0 16px;
   font-family: "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 88px;
-  color: #ffffff;
+  color: #020406;
   line-height: 96px;
   font-weight: 400;
 }
 
 .title{
-  color: #ffffff;
+  color: #020406;
   font-family: "Old Standard TT", "Times", "Times New Roman", serif;
 }
 
@@ -81,6 +97,7 @@ body {
 
 .subheading {
   margin: 0 0 56px;
+  padding-top: 65px;
   font-family: "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 64px;
   line-height: 80px;
@@ -194,7 +211,7 @@ body {
   color: inherit;
   text-decoration: none;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left;  
 }
 
 .footer-email {
