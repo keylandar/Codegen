@@ -1,3 +1,8 @@
+
+*::-webkit-scrollbar {
+	width: 0; 
+}
+
 body {
   margin: 0;
   min-width: 960px;
@@ -58,9 +63,9 @@ body {
 }
 
 .hero-image {
-  margin-bottom: 620px;
+  margin-bottom: 100px;
   background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,0.7038165608040091) 0%, rgba(255,255,255,0.2976540958180147) 50%, rgba(255,255,255,0) 80%);  
+  background: radial-gradient(circle, rgba(255,255,255,0.7038165608040091) 0%, rgba(255,255,255,0.2976540958180147) 50%, rgba(255,255,255,0) 70%);  
   background-position: center;
   border-radius: 25%;
   position: relative;
@@ -85,7 +90,7 @@ body {
   font-family: "Old Standard TT", "Times", "Times New Roman", serif;
 }
 
-.hero-image p {
+.hero-image img {
   margin: 0;
   font-size: 32px;
   line-height: 48px;
@@ -97,7 +102,6 @@ body {
 
 .subheading {
   margin: 0 0 56px;
-  padding-top: 65px;
   font-family: "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 64px;
   line-height: 80px;
