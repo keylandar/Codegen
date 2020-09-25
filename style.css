@@ -1,4 +1,3 @@
-
 *::-webkit-scrollbar {
 	width: 0; 
 }
@@ -50,16 +49,6 @@ body {
 
 .header-menu:hover {
   text-decoration: underline;
-}
-
-.header-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
-}
-
-.header-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
 }
 
 .hero-image {
@@ -191,17 +180,6 @@ body {
 
 .projects p {
   margin: 0 0 24px;
-}
-
-.button {
-  padding: 6px 20px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: #288be6;
-  color: #ffffff;
 }
 
 .page-footer {
