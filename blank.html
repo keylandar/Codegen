@@ -26,18 +26,69 @@
             <div class="container">
                 <h2 class="subheading">Ankieta uczęstnika</h2>
                 <div class="name">
-                    <div>
-                        <h3>Imię: </h3>
-                        <input type="text" name="Imie">
-                    </div>
-                    <div>
-                        <h3>Nazwisko: </h3>
-                        <input type="text" name="Nazwisko">
-                    </div>
-                    <div>
-                        <h3>Twój wiek: </h3>
-                        <input type="number">
-                    </div>
+                    <fieldset>
+                        <legend>Twoje dane personalne:</legend>
+                        <div>
+                            <h3>Imię: </h3>
+                            <input type="text" name="imie" placeholder="Imię" required>
+                        </div>
+                        <div>
+                            <h3>Nazwisko: </h3>
+                            <input type="text" name="nazwisko" placeholder="Nazwisko" required>
+                        </div>
+                        <div>
+                            <h3>Twój wiek: </h3>
+                            <input type="number" name="wiek" placeholder="6"pattern="[0-9]{2}" required>
+                        </div>
+                        <div>
+                            <h3>Twój numer telefonu:</h3>
+                            <input type="tel" name="telefon" placeholder="555-666-777" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>O sobie:</legend>
+                        <div>
+                            <h3>Twoje hobby: </h3>
+                            <textarea name="hobby" rows="10" cols="100">
+                                Napisz tutaj swoje hobby:
+                            </textarea>
+                        </div>
+                        <div>
+                            <h3>Twoje ulubione gry: </h3>
+                            <textarea name="gra" rows="10" cols="100">
+                                Napisz tutaj swoje ulubione gry:
+                            </textarea>
+                        </div>
+                        <div>
+                            <h3>Ile czasu spędzasz za komputerem:</h3>
+                            <form>
+                                <input type="radio" name="czas" value="0">
+                                <label for="0">Mniej niż godzinę</label><br>
+                                <input type="radio" name="czas" value="2">
+                                <label for="2">1-2 godziny</label><br>
+                                <input type="radio" name="czas" value="4">
+                                <label for="4">2-4 godziny</label>
+                                <input type="radio" name="czas" value="6">
+                                <label for="6">Więcej godzin</label>
+                              </form>
+                        </div><div>
+                            <h3>Lubisz matematykę:</h3>
+                            <form>
+                                <input type="radio" name="math" value="Tak">
+                                <label for="Tak">Tak</label><br>
+                                <input type="radio" name="math" value="Nie">
+                                <label for="Nie">Nie</label><br>
+                                <input type="radio" name="math" value="MW">
+                                <label for="MW">Mniej więcej</label><br>
+                              </form>
+                        </div>
+                        <div>
+                            <h3>Czego chciałbyś się nauczyć? </h3>
+                            <textarea name="nauka" rows="10" cols="100">
+                                Napisz tutaj czego chciałbyś się nauczyć:
+                            </textarea>
+                        </div>
+                    </fieldset>
                 </div>
             </div>
         </section>
