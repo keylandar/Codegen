@@ -2,9 +2,27 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="remodal.css">
+        <link rel="stylesheet" href="remodal-default-theme.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-        <title>EDISON - Kursy</title> 
+        <link rel="icon" href="img/logo2.png">
+        <title>EDISON - Kursy</title>
+        <style>
+            .remodal-bg.with-red-theme.remodal-is-opening,
+            .remodal-bg.with-red-theme.remodal-is-opened {
+              filter: none;
+            }
+        
+            .remodal-overlay.with-red-theme {
+              background-color: #f44336;
+            }
+        
+            .remodal.with-red-theme {
+              background: #fff;
+            }
+        </style> 
     </head>
     <body>
         <header class="page-header">
@@ -27,78 +45,99 @@
                 <h2 class="subheading">Nasze kursy</h2>
                 <div class="courses">
                     <div class="kids">
-                        <img src="img/logo_kids.png" alt="logo_kids">
+                        <a href="#modalkids"><img src="img/logo_kids.png" alt="logo_kids"></a>
                         <h2>Polecane dla dzieci od 6 do 9 lat</h2>
-                        <h3>Wprowadzenie dziecka w świat technologii komputerowej:</h3>
-                        <ul>
-                            <li>Co to jest "Komputer"?</li>
-                            <li>Historia komputerów</li>
-                            <li>Jak działa komputer?</li>
-                            <li>Informacje o urządzeniach wejścia-wyjścia</li>
-                            <li>Bezpieczeństwo podczas pracy z komputerami</li>
-                        </ul>
-                        <h3>Zapoznanie się z procesem programowania:</h3>
-                        <ul>
-                            <li>Podstawowa konstrukcja programów, ich kluczowe elementy (cykle, warunki, zmienne itp.) w postaci bloków przy pomocy <b>Scratcha</b></li>
-                            <li>Wprowadzenie dziecka w strukturę kodu za pomocą <b>Blockly Games</b></li>
-                            <li>Pierwsze kroki w zrozumieniu programowania jako procesu i powierzchowna znajomość pierwszego języka - <b>Javascript</b>, z wykorzystaniem gier w <b>CodeCombat</b></li>
-                            <li>Wygląda jak inna gra, ale nasi uczniowie staną przed odpowiedzialnym zadaniem zapobiegania pożarom lasu za pomocą programowania w <b>Minecraft Education</b></li>
-                            <li>I ostatnia w tym module, ale nie mniej zabawna i interesująca: nauka tworzenia i programowania własnych programów na smartfony i tablety w <b>MIT App Inventor</b></li>
-                        </ul>   
                     </div>
                     <div class="beginner">
-                        <img src="img/logo_beginner.png" alt="logo_beginner">
+                        <a href="#modalbeginner"><img src="img/logo_beginner.png" alt="logo_beginner"></a>
                         <h2>Polecane dla dzieci od 9 do 16 lat</h2>
-                        <h3>Dla początkujących do tego kursa:</h3>
-                        <ul>
-                            <li>Sprawdzenie wiedzy nowych uczniów o programowaniu</li>
-                            <li>Także analiza umijętności pracy z komputerem</li>
-                        </ul>
-                        <h3>Wprowadzenie do kursu Web-programowania:</h3>
-                        <ul>
-                            <li>Historia powstania Internetu, pierwszej strony internetowej, pierwsztgo e-mail-u i czym jest Web-programowanie</li>
-                            <li>Wprowadzenie do języków Web-programowania, których nauczymy się na tym kursie: <b>HTML, CSS, JavaScript</b></li>
-                            <li>Krótkie wprowadzenie do języków programowania, których uczymy na kursie <b><u>EDISON ADVANCED</u>: </b><b>PHP, SQL</b></li>
-                        </ul>
-                        <h3>Pod koniec, praca z edytorami grafiki:</h3>
-                        <ul>
-                            <li>Darmowymi:<ul>
-                                <li>InkScape</li>
-                                <li>GIMP</li>
-                            </ul></li>
-                            <li>Płatnymi:<ul>
-                                <li>Adobe Photoshop</li>
-                                <li>Adobe Illustrator</li>
-                            </ul></li>
-                        </ul>
                     </div>
                     <div class="advanced">
-                        <img src="img/logo_advanced1.png" alt="logo_advanced">
+                        <a href="#modaladvanced"><img src="img/logo_advanced1.png" alt="logo_advanced"></a>
                         <h2>Polecane dla dzieci od 13 do 16 lat</h2>
-                        <h3><u>OBOWIĄZKOWE WYMAGANIA</u>: </h3>
-                        <ul>
-                            <li>Być absolwentem kursów <b><u>EDISON BEGINNER</u></b></li>
-                            <b>ALBO</b>
-                            <li>Znajomość języków programowania:<ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                            </ul></li>
-                        </ul>
-                        <h3>Początkowe zajęcia:</h3>
-                        <ul>
-                            <li>Przedląd omówionego materiału z kursu <b><u>EDISON BEGINNER</u></b></li>
-                            <b>i</b>
-                            <li>Sprawdzanie wiedzy nowнср uczniów</li>
-                        </ul>
-                        <h3>Nauka nowych języków programowania:</h3>
-                        <ul>
-                            <li><b>PHP, </b>który jest przydatny do realizacji w naszych projektach <b><u>baz danych</u></b></li>
-                            <li>A także <b>SQL,</b> za pomocą którego, a także aplikacji <b>XAMPP,</b> właśnie, tworzą <b><u>bazy danych</u></b></li>
-                        </ul>
-                        <h3>W ciągu całego szkolenia jednocześnie będzie napisanie projektu (własna pierwsza strona) dla certyfikatu od naszych kursów (dla nowych studentów - możliwość otrzymania certyfikatu z poprzedniego kursu)</h3>
                     </div>
                 </div>
+            </div>
+            <div class="remodal" data-remodal-id="modalkids" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                <div>
+                    <h2 id="modal1Title">Wprowadzenie dziecka w świat technologii komputerowej:</h2>
+                    <ul id="modal1Desc">
+                        <li>Co to jest "Komputer"?</li>
+                        <li>Historia komputerów</li>
+                        <li>Jak działa komputer?</li>
+                        <li>Informacje o urządzeniach wejścia-wyjścia</li>
+                        <li>Bezpieczeństwo podczas pracy z komputerami</li>
+                    </ul>
+                    <h2 id="modal1Title">Zapoznanie się z procesem programowania:</h2>
+                    <ul id="modal1Desc">
+                        <li>Podstawowa konstrukcja programów, ich kluczowe elementy (cykle, warunki, zmienne itp.) w postaci bloków przy pomocy <b>Scratcha</b></li>
+                        <li>Wprowadzenie dziecka w strukturę kodu za pomocą <b>Blockly Games</b></li>
+                        <li>Pierwsze kroki w zrozumieniu programowania jako procesu i powierzchowna znajomość pierwszego języka - <b>Javascript</b>, z wykorzystaniem gier w <b>CodeCombat</b></li>
+                        <li>Wygląda jak inna gra, ale nasi uczniowie staną przed odpowiedzialnym zadaniem zapobiegania pożarom lasu za pomocą programowania w <b>Minecraft Education</b></li>
+                        <li>I ostatnia w tym module, ale nie mniej zabawna i interesująca: nauka tworzenia i programowania własnych programów na smartfony i tablety w <b>MIT App Inventor</b></li>
+                    </ul>
+                </div>
+                <br>
+                <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+            </div>
+            <div class="remodal" data-remodal-id="modalbeginner" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                <div>
+                    <h2 id="modal1Title">Dla początkujących do tego kursa:</h2>
+                    <ul id="modal1Desc">
+                        <li>Sprawdzenie wiedzy nowych uczniów o programowaniu</li>
+                        <li>Także analiza umijętności pracy z komputerem</li>
+                    </ul>
+                    <h2 id="modal1Title">Wprowadzenie do kursu Web-programowania:</h2>
+                    <ul id="modal1Desc">
+                        <li>Historia powstania Internetu, pierwszej strony internetowej, pierwsztgo e-mail-u i czym jest Web-programowanie</li>
+                        <li>Wprowadzenie do języków Web-programowania, których nauczymy się na tym kursie: <b>HTML, CSS, JavaScript</b></li>
+                        <li>Krótkie wprowadzenie do języków programowania, których uczymy na kursie <b><u>EDISON ADVANCED</u>: </b><b>PHP, SQL</b></li>
+                    </ul>
+                    <h2 id="modal1Title">Pod koniec, praca z edytorami grafiki:</h2>
+                    <ul id="modal1Desc">
+                        <li>Darmowymi:<ul>
+                            <li>InkScape</li>
+                            <li>GIMP</li>
+                        </ul></li>
+                        <li>Płatnymi:<ul>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Illustrator</li>
+                        </ul></li>
+                    </ul>
+                </div>
+                <br>
+                <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+            </div>
+            <div class="remodal" data-remodal-id="modaladvanced" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                <div>
+                    <h2 id="modal1Title"><u>OBOWIĄZKOWE WYMAGANIA</u>: </h2>
+                    <ul id="modal1Desc">
+                        <li>Być absolwentem kursów <b><u>EDISON BEGINNER</u></b></li>
+                        <b>ALBO</b>
+                        <li>Znajomość języków programowania:<ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul></li>
+                    </ul>
+                    <h2 id="modal1Title">Początkowe zajęcia:</h2>
+                    <ul id="modal1Desc">
+                        <li>Przedląd omówionego materiału z kursu <b><u>EDISON BEGINNER</u></b></li>
+                        <b>i</b>
+                        <li>Sprawdzanie wiedzy nowych uczniów</li>
+                    </ul>
+                    <h2 id="modal1Title">Nauka nowych języków programowania:</h2>
+                    <ul id="modal1Desc">
+                        <li><b>PHP, </b>który jest przydatny do realizacji w naszych projektach <b><u>baz danych</u></b></li>
+                        <li>A także <b>SQL,</b> za pomocą którego, a także aplikacji <b>XAMPP,</b> właśnie, tworzą <b><u>bazy danych</u></b></li>
+                    </ul>
+                    <h2 id="modal1Title"><u>W ciągu całego szkolenia jednocześnie będzie napisanie projektu (własna pierwsza strona) dla certyfikatu od naszych kursów (dla nowych studentów - możliwość otrzymania certyfikatu z poprzedniego kursu)</u></h2>
+                </div>
+                <br>
+                <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
             </div>
         </section>
         <footer class="page-footer">
@@ -107,5 +146,33 @@
                 <a class="footer-phone" href="tel:+48555666777">+48 555 666 777</a>
             </div>
         </footer>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+        <script src="remodal.js"></script>
+        <script>
+            $(document).on('opening', '.remodal', function () {
+              console.log('opening');
+            });
+          
+            $(document).on('opened', '.remodal', function () {
+              console.log('opened');
+            });
+          
+            $(document).on('closing', '.remodal', function (e) {
+              console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+            });
+          
+            $(document).on('closed', '.remodal', function (e) {
+              console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+            });
+          
+            $(document).on('confirmation', '.remodal', function () {
+              console.log('confirmation');
+            });
+          
+            $(document).on('cancellation', '.remodal', function () {
+              console.log('cancellation');
+            });
+          </script>
     </body>
 </html>
