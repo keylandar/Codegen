@@ -106,8 +106,13 @@ body {
   flex-direction: row;
 }
 
-.logos #kids {
+.logos #logo_kids {
   padding-top: 15px;
+}
+
+.ages h2 {
+  text-align: center;
+  margin: 5px;
 }
 
 .subheading {
