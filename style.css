@@ -96,26 +96,18 @@ body {
 .container .courses {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-}
-
-.courses .kids,
-.courses .beginner,
-.courses .advanced {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  max-width: 430px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
-.kids img,
-.beginner img,
-.advanced img {
-  max-width: 300px;
+.courses .logos,
+.courses .ages {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.logos #kids {
+  padding-top: 15px;
 }
 
 .subheading {
