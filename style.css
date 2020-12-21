@@ -123,6 +123,149 @@ body {
   max-width: 400px;
 }
 
+.wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.collapsible {
+  background-color: #777777;
+  border-radius: 10px;
+  padding: 0px;
+  width: 500px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:hover {
+  border-radius: 10px;
+}
+
+.active {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+
+}
+
+.active:after {
+  content: "\2212";
+  border-radius: 15px 15px 5px 5px;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/*-------------------------------------------*/
+
+li.first-theme {
+  background-color: rgb(255, 2, 2);
+  color: white;
+  width: 470px;
+}
+
+.active.first-theme, .first-theme:hover {
+  background-color: rgb(187, 57, 57);
+}
+
+div.first-text {
+  width: 434px;
+}
+
+li.second-theme {
+  background-color: rgb(255, 145, 2);
+  color: white;
+  width: 500px;
+}
+
+.active.second-theme, .second-theme:hover {
+  background-color: rgb(187, 141, 57);
+}
+
+div.second-text {
+  width: 464px;
+}
+
+li.third-theme {
+  background-color: rgb(201, 223, 5);
+  color: white;
+  width: 530px;
+}
+
+.active.third-theme, .third-theme:hover {
+  background-color: rgb(187, 185, 57);
+}
+
+div.third-text {
+  width: 494px;
+}
+
+li.fourth-theme {
+  background-color: rgb(124, 255, 2);
+  color: white;
+  width: 560px;
+}
+
+.active.fourth-theme, .fourth-theme:hover {
+  background-color: rgb(131, 187, 57);
+}
+
+div.fourth-text {
+  width: 524px;
+}
+
+li.fifth-theme {
+  background-color: rgb(2, 255, 242);
+  color: white;
+  width: 590px;
+}
+
+.active.fifth-theme, .fifth-theme:hover {
+  background-color: rgb(57, 187, 187);
+}
+
+div.fifth-text {
+  width: 554px;
+}
+
+li.sixth-theme {
+  background-color: rgb(2, 103, 255);
+  color: white;
+  width: 620px;
+}
+
+.active.sixth-theme, .sixth-theme:hover {
+  background-color: rgb(57, 70, 187);
+}
+
+div.sixth-text {
+  width: 584px;
+}
+/*---------------------------------------------*/
+
 .ages h2 {
   text-align: center;
   margin: 5px;
