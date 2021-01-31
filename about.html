@@ -2,20 +2,25 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
         <link rel="icon" href="img/logo2.png">
-        <title>EDISON - O nas</title> 
+        <title data-pl="EDISON - O nas" data-ru="EDISON - Про нас">EDISON - O nas</title> 
     </head>
     <body>
         <header class="page-header">
             <div class="container">
                 <a href="index.html" class="logo"><img src="img/logo1.png" alt="logo" onmouseover="this.src='img/logo11.png';" onmouseout="this.src='img/logo1.png';"></a>
-                <a href="about.html" class="header-menu">O nas</a>
-                <a href="news.html" class="header-menu">Aktualności</a>
-                <a href="courses.html" class="header-menu">Kursy</a>
-                <a href="blank.html" class="header-menu">Ankieta uczestnika</a>
-                <a href="contact.html" class="header-menu">Kontakt</a> 
+                <a href="about.html" class="header-menu" data-pl="O nas" data-ru="Про нас">O nas</a>
+                <a href="news.html" class="header-menu" data-pl="Aktualności" data-ru="Новости">Aktualności</a>
+                <a href="courses.html" class="header-menu" data-pl="Kursy" data-ru="Курсы">Kursy</a>
+                <a href="blank.html" class="header-menu" data-pl="Ankieta uczestnika" data-ru="Анкета участника">Ankieta uczestnika</a>
+                <a href="contact.html" class="header-menu" data-pl="Kontakt" data-ru="Контакт">Kontakt</a>
+            </div>
+            <div class="button_lang">
+                <button class="pl">PL</button>
+                <button class="ru">RU</button>
             </div>
         </header>
         <section class="hero-image">
@@ -25,20 +30,25 @@
         </section>
         <section class="intro">
             <div class="container">
-                <h2 class="subheading">O nas</h2>
-                <h3>Kostiantyn Landar</h3>
-                <h3><i>Nauczyciel szkoły programowania</i></h3>
-                <section class="intro">
-                    <div class="container">
-                        <figure class="user-image">
-                            <img src="img/user.jpg" width="464" height="990" alt="My Photo">
-                        </figure>
-                        <h3>Trochę o sobie</h3>
-                        <p>Jestem osobą, ktorą przez ostatnie 10 lat fascynują komputery i nie mogę bez nich żyć, jest to moje hobby które chętnie łączę z moją pracą.</p>
-                        <p>Pod czas studiów w szkole średniej, w kolegium w swoim miescie Chmielnicki, oraz za pomocą specjalnych serwisów edukacyjnych studiowałem programowanie. A właściwie: tworzenie i stylizację stron internetowych. Nawet teraz powiększam swoje umiętności i rozszerzam listę języków programowania, których się nauczyłem.</p>
-                        <p>Moja praca połącząniem mojego hobby z moją pasją. Komputerom poświęcam większość mojego wolnego czasu, a w tych czasach życie bez nich dla większości ludzi było by bardzo uciążliwe.</p>
+                <h2 class="subheading" data-pl="O nas" data-ru="Про нас">O nas</h2>
+				<div class="staff">
+					<div class="card" style="width: 300px;">
+                        <img src="img/photo1.jpg" alt="Avatar" style="width: 300px;">
+                        <div class="card-caption">
+							<h1 data-pl="Kostiantyn Landar" data-ru="Константин Ландар">Kostiantyn Landar</h1>
+                            <p data-pl="Nauczyciel kursów programowania." data-ru="Учитель школы программирования.">Nauczyciel kursów programowania.</p>
+                            <p data-pl="Zajmuje się nauczaniem dzieci podstawowych zasad pracy z komputerem, podstaw programowania, języków Web-programowania i Web-dyzajn." data-ru="Обучает детей основным принципам работы на компьютере, основам программирования, языкам веб-программирования и веб-дизайна.">Zajmuje się nauczaniem dzieci podstawowych zasad pracy z komputerem, podstaw programowania, języków Web-programowania i Web-dyzajn.</p>
+                        </div>
                     </div>
-                </section>
+					<div class="card" style="width: 300px;">
+                        <img src="img/photo2.jpg" alt="Avatar" style="width: 300px;">
+                        <div class="card-caption">
+							<h1 data-pl="Valeria Saienko" data-ru="Валерия Саенко">Valeria Saienko</h1>
+                            <p data-pl="Asystent nauczyciela kursów programowania." data-ru="Ассистент преподавателя школы программирования.">Asystent nauczyciela kursów programowania.</p>
+                            <p data-pl="Zajmuje się nauczaniem dzieci podstaw programowania, języków Web-programowania i komunikacja pomiędzy rodzicami i nauczycielami." data-ru="Занимается обучением детей основам программирования, языкам веб-программирования и коммуникацией между родителями и учителями.">Zajmuje się nauczaniem dzieci podstaw programowania, języków Web-programowania i komunikacja pomiędzy rodzicami i nauczycielami.</p>
+                        </div>
+                    </div>
+				</div>
             </div>
         </section>
         <footer class="page-footer">
@@ -47,5 +57,7 @@
                 <a class="footer-phone" href="tel:+48555666777">+48 555 666 777</a>
             </div>
         </footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
