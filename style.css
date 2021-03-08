@@ -22,7 +22,7 @@ body {
 }
 
 .page-header {
-  margin: 0 0 160px;
+  margin: 0;
   padding: 32px 0 32px;
   display: flex;
   justify-content: flex-start;
@@ -55,7 +55,7 @@ body {
 }
 
 .hero-image {
-  margin-bottom: 100px;
+  margin-bottom: 175px;
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,0.7038165608040091) 0%, rgba(255,255,255,0.2976540958180147) 50%, rgba(255,255,255,0) 70%);  
   background-position: center;
@@ -89,21 +89,22 @@ body {
 }
 
 .intro {
-  margin: 0 0 120px;
+  margin: 0px 30px 120px 30px;
 }
 
 .intro .container {
   max-width: 1408px;
 }
 
+.greetings {
+  text-indent: 30px;
+  text-align: left;
+} 
+
 .greetings h3{
   text-align: center;
 }
 
-.greetings .skills {
-  display: flex;
-  flex-direction: row;
-}
 
 .container .courses {
   display: flex;
@@ -213,13 +214,13 @@ div.second-text {
 }
 
 li.third-theme {
-  background-color: rgb(201, 223, 5);
+  background-color: rgb(201, 221, 16);
   color: white;
   width: 530px;
 }
 
 .active.third-theme, .third-theme:hover {
-  background-color: rgb(187, 185, 57);
+  background-color: rgb(190, 189, 72);
 }
 
 div.third-text {
@@ -227,13 +228,13 @@ div.third-text {
 }
 
 li.fourth-theme {
-  background-color: rgb(124, 255, 2);
+  background-color: rgb(123, 226, 26);
   color: white;
   width: 560px;
 }
 
 .active.fourth-theme, .fourth-theme:hover {
-  background-color: rgb(131, 187, 57);
+  background-color: rgb(133, 201, 45);
 }
 
 div.fourth-text {
@@ -241,13 +242,13 @@ div.fourth-text {
 }
 
 li.fifth-theme {
-  background-color: rgb(2, 255, 242);
+  background-color: rgb(40, 218, 209);
   color: white;
   width: 590px;
 }
 
 .active.fifth-theme, .fifth-theme:hover {
-  background-color: rgb(57, 187, 187);
+  background-color: rgb(59, 156, 156);
 }
 
 div.fifth-text {
@@ -255,7 +256,7 @@ div.fifth-text {
 }
 
 li.sixth-theme {
-  background-color: rgb(2, 103, 255);
+  background-color: rgb(48, 107, 196);
   color: white;
   width: 620px;
 }
@@ -284,9 +285,7 @@ div.sixth-text {
   background-color: transparent;
   width: 250px;
   height: 250px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px;
-  padding: 10px;
 } 
  
 .flip-card-inner {
@@ -347,9 +346,34 @@ div.free_app_is {
   justify-content: flex-start;
 }
 /*---------------------------------------------*/
+.staff {
+  padding: 0 20px;	
+  display: flex;
+  justify-content: flex-start;
+}
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 0 15px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-caption {
+  padding: 2px 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*---------------------------------------------*/
 #attention {
   font-style: italic;
+  font-size: larger;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -360,7 +384,6 @@ div.free_app_is {
 
 .subheading {
   margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 64px;
   line-height: 80px;
   font-weight: 400;
