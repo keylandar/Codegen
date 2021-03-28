@@ -2,6 +2,13 @@
 	width: 0; 
 }
 
+html, body, 
+.container,
+.greetings,
+.greetings section { 
+    height: 100%; 
+}
+
 body {
   margin: 0;
   min-width: 960px;
@@ -18,7 +25,7 @@ body {
 .container {
   max-width: 928px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0;
 }
 
 .page-header {
@@ -55,7 +62,7 @@ body {
 }
 
 .hero-image {
-  margin-bottom: 175px;
+  margin: 45px 0 175px 0;
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,0.7038165608040091) 0%, rgba(255,255,255,0.2976540958180147) 50%, rgba(255,255,255,0) 70%);  
   background-position: center;
@@ -89,22 +96,199 @@ body {
 }
 
 .intro {
-  margin: 0px 30px 120px 30px;
+  margin: 0px 0px 120px 0px;
 }
 
 .intro .container {
-  max-width: 1408px;
+  max-width: 100%;
 }
 
 .greetings {
-  text-indent: 30px;
   text-align: left;
-} 
+}
 
 .greetings h3{
   text-align: center;
 }
 
+.greetings p{
+  text-indent: 30px;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  margin: 10px 0 10px 0;
+}
+
+.skills {
+  height: 1080px;
+  background-size: cover;
+  padding: 25px 10px 25px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.skills-text {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  background: radial-gradient(circle, rgba(255,255,255,0.7038165608040091) 0%, rgba(255,255,255,0.2976540958180147) 50%, rgba(255,255,255,0) 70%);  
+  background-position: center;
+  border-radius: 25%;
+}
+
+#section1 {
+  -webkit-animation: section1 15s infinite;
+  -moz-animation: section1 15s infinite;
+  animation: section1 15s infinite;
+}
+
+@-webkit-keyframes section1 {
+  0% {
+    background-image: url(img/background1.jpg);
+  }
+  33% {
+    background-image: url(img/background4.jpg);
+  }
+  66% {
+    background-image: url(img/background7.jpg);
+  }
+  100% {
+    background-image: url(img/background1.jpg);
+  }
+}
+
+@-moz-keyframes section1 {
+  0% {
+    background-image: url(img/background1.jpg);
+  }
+  33% {
+    background-image: url(img/background4.jpg);
+  }
+  66% {
+    background-image: url(img/background7.jpg);
+  }
+  100% {
+    background-image: url(img/background1.jpg);
+  }
+}
+
+@keyframes section1 {
+  0% {
+    background-image: url(img/background1.jpg);
+  }
+  33% {
+    background-image: url(img/background4.jpg);
+  }
+  66% {
+    background-image: url(img/background7.jpg);
+  }
+  100% {
+    background-image: url(img/background1.jpg);
+  }
+}
+
+#section2 {
+  -webkit-animation: section2 15s infinite;
+  -moz-animation: section2 15s infinite;
+  animation: section2 15s infinite;
+}
+
+@-webkit-keyframes section2 {
+  0% {
+    background-image: url(img/background2.jpg);
+  }
+  33% {
+    background-image: url(img/background5.jpg);
+  }
+  66% {
+    background-image: url(img/background8.jpg);
+  }
+  100% {
+    background-image: url(img/background2.jpg);
+  }
+}
+
+@-moz-keyframes section2 {
+  0% {
+    background-image: url(img/background2.jpg);
+  }
+  33% {
+    background-image: url(img/background5.jpg);
+  }
+  66% {
+    background-image: url(img/background8.jpg);
+  }
+  100% {
+    background-image: url(img/background2.jpg);
+  }
+}
+
+@keyframes section2 {
+  0% {
+    background-image: url(img/background2.jpg);
+  }
+  33% {
+    background-image: url(img/background5.jpg);
+  }
+  66% {
+    background-image: url(img/background8.jpg);
+  }
+  100% {
+    background-image: url(img/background2.jpg);
+  }
+}
+
+#section3 {
+  -webkit-animation: section3 15s infinite;
+  -moz-animation: section3 15s infinite;
+  animation: section3 15s infinite;
+}
+
+@-webkit-keyframes section3 {
+  0% {
+    background-image: url(img/background3.jpg);
+  }
+  33% {
+    background-image: url(img/background6.jpg);
+  }
+  66% {
+    background-image: url(img/background9.jpg);
+  }
+  100% {
+    background-image: url(img/background3.jpg);
+  }
+}
+
+@-moz-keyframes section3 {
+  0% {
+    background-image: url(img/background3.jpg);
+  }
+  33% {
+    background-image: url(img/background6.jpg);
+  }
+  66% {
+    background-image: url(img/background9.jpg);
+  }
+  100% {
+    background-image: url(img/background3.jpg);
+  }
+}
+
+@keyframes section3 {
+  0% {
+    background-image: url(img/background3.jpg);
+  }
+  33% {
+    background-image: url(img/background6.jpg);
+  }
+  66% {
+    background-image: url(img/background9.jpg);
+  }
+  100% {
+    background-image: url(img/background3.jpg);
+  }
+}
 
 .container .courses {
   display: flex;
@@ -176,11 +360,59 @@ body {
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+.actual {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 0 40px 0;
+  border: 1px solid gray;
+}
+
+.post-image {
+  width: 800px;
+  height: 450px;
+  background-size: cover;
+}
+
+#post0 .post-image{
+  background-image: url(img/post0.jpg);
+}
+
+.post-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 30px 0 30px;
+}
+
+.post-title {
+  text-align: center;
+}
+
+.post-text {
+  padding: 10px 20px 10px 20px;
 }
 
 /*-------------------------------------------*/
@@ -354,6 +586,7 @@ div.free_app_is {
   padding: 0 20px;	
   display: flex;
   justify-content: flex-start;
+  flex-direction: row;
 }
 
 .card {
@@ -439,8 +672,6 @@ div.free_app_is {
   margin-top: 40px;
 } 
 
-
-
 .button_lang .pl,
 .button_lang .ru{
   width: 40px;
@@ -488,7 +719,7 @@ fieldset textarea {
 
 .page-footer a {
   margin-left: 56px;
-  color: inherit;
+  color: white;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;  
@@ -502,4 +733,9 @@ fieldset textarea {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
+}
+
+.footer-instagram {
+  padding-left: 25px;
+  background-image: url("https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/Instagram.webp");
 }
