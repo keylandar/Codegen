@@ -428,7 +428,7 @@ li.first-theme {
 }
 
 div.first-text {
-  width: 434px;
+  width: 470px;
 }
 
 li.second-theme {
@@ -442,7 +442,7 @@ li.second-theme {
 }
 
 div.second-text {
-  width: 464px;
+  width: 500px;
 }
 
 li.third-theme {
@@ -456,7 +456,7 @@ li.third-theme {
 }
 
 div.third-text {
-  width: 494px;
+  width: 530px;
 }
 
 li.fourth-theme {
@@ -470,7 +470,7 @@ li.fourth-theme {
 }
 
 div.fourth-text {
-  width: 524px;
+  width: 560px;
 }
 
 li.fifth-theme {
@@ -484,7 +484,7 @@ li.fifth-theme {
 }
 
 div.fifth-text {
-  width: 554px;
+  width: 590px;
 }
 
 li.sixth-theme {
@@ -498,7 +498,7 @@ li.sixth-theme {
 }
 
 div.sixth-text {
-  width: 584px;
+  width: 620px;
 }
 /*---------------------------------------------*/
 
@@ -579,7 +579,10 @@ div.free_app_is {
 
 .adobe_app, .free_app {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 /*---------------------------------------------*/
 .staff {
