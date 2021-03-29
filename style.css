@@ -396,7 +396,9 @@ body {
   background-size: cover;
 }
 
-#post0 .post-image{
+#post0 .post-image,
+#post1 .post-image,
+#post2 .post-image {
   background-image: url(img/post0.jpg);
 }
 
